@@ -23,6 +23,7 @@ public class StudentController {
 	
 	@PostMapping("/student")
 	public Student addStudentToDb(@RequestBody Student student) {
+		
 		return service.saveStudent(student);
 		
 	}
